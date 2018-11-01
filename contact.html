@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+		<meta name="description" content="Tony D Trucking">
+		<meta name="author" content="Tony D Trucking">
+		<title>Tony D Trucking</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div class="container">
+    <img class="logo" src="img/TonyD-Logo.jpg" width="1140" height="278">
+     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+    <ul class="block-menu">
+            <li><a href=index.html class="three-d">
+                Home
+                <span aria-hidden="true" class="three-d-box">
+                    <span class="front">Home</span>
+                    <span class="back">Home</span>
+                </span>
+            </a></li>
+            <li><a href="about.html" class="three-d">
+                About
+                <span aria-hidden="true" class="three-d-box">
+                    <span class="front">About</span>
+                    <span class="back">About</span>
+                </span>
+            </a></li>
+            <li><a href="contact.html" class="three-d">
+                Contact
+                <span aria-hidden="true" class="three-d-box">
+                    <span class="front">Contact</span>
+                    <span class="back">Contact</span>
+                </span>
+            </a></li>
+            <!-- more items here -->
+    </ul>
+    </div>
+
+        <div class="container">
+        <div class="col-lg-12 col-lg-12">
+            <div class="contact">
+                
+     <form class="form-horizontal" role="form" method="post" action="contact.php">
+        <div class="form-group">
+            <label for="name" class="col-sm-4 control-label">Name</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-4 control-label">Email</label>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="col-sm-4 control-label">Message</label>
+            <div class="col-sm-4">
+                <textarea class="form-control" rows="4" name="message"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="human" class="col-sm-4 control-label">2 + 3 = ?</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-9 col-sm-offset-3">
+                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+                <! Will be used to display an alert to the user>
+            </div>
+        </div>
+</form>
+    </div> 
+
+    <div class="container">
+        <div class="footer">
+            <footer>
+            <center>Tony D. Trucking LLC’s main office is located at 125 Sterling Ave, Jersey City, NJ 07305.
+            <br>© Copyright 2017 - All Rights Reserved</center>
+            </footer>
+        </div> 
+    </div>
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

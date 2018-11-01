@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+
+@font-face {
+	font-family: 'body';
+	src: url('../fonts/gillsans.eot');
+	src: url('../fonts/gillsans.eot?#iefix') format('embedded-opentype'), url('../fonts/gillsans.woff') format('woff'), url('../fonts/gillsans.ttf') format('truetype'), url('../fonts/gillsans.svg#gillsans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bodybold';
+	src: url('../fonts/gillsansbold.eot');
+	src: url('../fonts/gillsansbold.eot?#iefix') format('embedded-opentype'), url('../fonts/gillsansbold.woff') format('woff'), url('../fonts/gillsansbold.ttf') format('truetype'), url('../fonts/gillsansbold.svg#gillsansbold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'heading';
+	src: url('../fonts/helveticalight.eot');
+	src: url('../fonts/helveticalight.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticalight.woff') format('woff'), url('../fonts/helveticalight.ttf') format('truetype'), url('../fonts/gillsanslight.svg#gillsanslight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'logotype';
+	src: url('../fonts/MrsSheppards-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'txtlogo';
+	src: url('../fonts/Raleway-ExtraBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media screen and (min-width: 0) {
+    #div{ width: 500px; }
+}
+@media screen and (min-width: 1000px) {
+    #div{ width: 900px; }
+}
+@media screen and (min-width: 1400px) {
+    #div{ width: 1300px; }
+}
+
+.big {
+font-size: 2em;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+/* basic menu styles */
+.block-menu {
+	display: block;
+	background: #65bc07;
+}
+
+.block-menu li {
+	display: inline-block;
+}
+
+.block-menu li a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	font-family: 'Passion One', Arial, sans-serif;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 15px 10px;
+}
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* 
+	put the "front" and "back" elements into place with CSS transforms, 
+	specifically translation and translatez
+*/
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #65bc07;
+	padding: 15px 10px;
+	color: white;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+
+/*
+.jumbotron h1, .jumbotron .h1{
+	font-family: 'body' gillsans;
+    font-size: 100px;
+    color: green;
+    text-shadow: 4px 4px 10px #888888;
+}
+*/
+
+h2 {
+    color: #116b8a;
+    font-family: 'body';
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+h6 {
+    color: black;
+    font-family: 'body';
+    font-size: 22px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.col-lg-6 {
+    padding: 5px;
+    width: 50%;
+}
+
+.box {
+    background-color: #116b8a;
+    border-style: solid;
+    border-color: cadetblue;
+    border-width: 10px;
+    border-radius: 25px;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'heading';
+    font-size: 32px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 105%;
+    height: 105%;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    width: 960;
+    padding-right: 10px;
+    padding-left: 30px;
+}
+
+
+.jumbotron {
+/*    background-image: url("http://3.bp.blogspot.com/-mern5oGqYgA/Tisqhq0ZV_I/AAAAAAAACE8/0scFcLri_y8/s1600/Masjid+Sultan+Salahuddin+Abdul+Aziz+Shah+at+dusk%252C+Shah+Alam%252C+Selangor%252C+Malaysia.jpg");*/
+	background-image: url(../img/truck-home.jpg);
+    height: 300px;
+    background-size: cover;
+    margin-top: 20px;
+    padding-top: 25px;
+    box-shadow: 4px 4px 10px #c2c3c3;
+    border-style: solid;
+    border-width: 5px;
+} 
+
+.footer {
+    color: black;
+    font-family: 'body';
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    background-color: #116b8a;
+}
